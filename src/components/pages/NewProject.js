@@ -1,7 +1,14 @@
-import React from "react";
+import ProjectForm from "../project/ProjectForm";
+import styles from "./NewProject.module.css";
 
 function NewProject() {
-  return <h1>Helo wodls</h1>;
+  return (
+    <div className={styles.newProjectContainer}>
+      <h1>Crie seu projeto</h1>
+      <p>Crie seu projeto para depois adicionar os serviços</p>
+      <ProjectForm />
+    </div>
+  );
 }
 
 export default NewProject;
