@@ -1,7 +1,7 @@
 import React from "react";
 
 function NewProject() {
-  return <div>NewProject</div>;
+  return <h1>Helo wodls</h1>;
 }
 
 export default NewProject;
