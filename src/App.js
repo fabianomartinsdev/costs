@@ -14,20 +14,15 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-
       <Container customClass="min-height">
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/company" element={<Company />} />
-
           <Route path="/contact" element={<Contact />} />
-
           <Route path="/projects" element={<Projects />} />
           <Route path="newproject" element={<NewProject />} />
         </Routes>
       </Container>
-
       <Footer />
     </BrowserRouter>
   );

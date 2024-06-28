@@ -7,7 +7,7 @@ import styles from "./ProjectForm.module.css";
 
 function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [categories, setCategories] = useState([]);
-  const [project, setProject] = useState(projectData || []);
+  const [project, setProject] = useState(projectData || {});
 
   useEffect(() => {
     fetch("http://localhost:5000/categories", {
@@ -25,12 +25,13 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
 
   const submit = (e) => {
     e.preventDefault();
-    handleSubmit(project);
     console.log(project);
+    handleSubmit(project);
   };
 
   function handleChange(e) {
     setProject({ ...project, [e.target.name]: e.target.value });
+    console.log(project);
   }
 
   function handleCategory(e) {
