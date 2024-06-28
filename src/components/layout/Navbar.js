@@ -17,8 +17,8 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/newproject" className={styles.link}>
-              Novo Projeto
+            <Link to="/projects" className={styles.link}>
+              Projeto
             </Link>
           </li>
           <li>
