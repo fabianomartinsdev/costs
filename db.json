@@ -1,50 +1,5 @@
 {
-  "projects": [
-    {
-      "id": "9a27",
-      "name": "Estudos",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "8d5e",
-      "name": "Design",
-      "budget": "200",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "1730",
-      "name": "projeto teste",
-      "budget": "9000",
-      "category": {
-        "id": "5",
-        "name": "Operacional"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "035d",
-      "name": "Servidor",
-      "budget": "10000",
-      "category": {
-        "id": "5",
-        "name": "Operacional"
-      },
-      "cost": 0,
-      "services": []
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": "1",

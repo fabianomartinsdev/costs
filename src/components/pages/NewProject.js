@@ -19,8 +19,7 @@ function NewProject() {
       body: JSON.stringify(project),
     })
       .then((response) => response.json)
-      .then((data) => {
-        console.log(data);
+      .then(() => {
         // redirect
         navigate("/projects", {
           state: { message: "Projeto criado com sucesso!" },
