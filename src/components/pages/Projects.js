@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import styles from "./Projects.module.css";
 
 import LinkButton from "../layout/LinkButton";
 import Message from "../layout/Message";
+import ProjectCard from "../project/ProjectCard";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -24,22 +25,28 @@ function Projects() {
     })
       .then((response) => response.json())
       .then((data) => setProjects(data))
-      .catch((err) => console.log(err));
+      .catch((error) => console.log(error));
   }, []);
 
   return (
     <section className={styles.container}>
-      <div className={styles.section}>
+      <div className={styles.titleContainer}>
+        <h1>Meus Projetos</h1>
         <LinkButton to="/newproject" text="Criar projeto" />
       </div>
-      <h1>Meus Projetos</h1>
       {message && <Message msg={message} type="success" />}
-      {projects.map((project) => (
-        <div key={project.id}>
-          <h3>{project.name}</h3>
-          <p>{project.budget}</p>
-        </div>
-      ))}
+      <div className={styles.projectsContainer}>
+        {projects.length > 0 &&
+          projects.map((project) => (
+            <ProjectCard
+              name={project.name}
+              id={project.id}
+              category={project.category.name}
+              budget={project.budget}
+              key={project.id}
+            ></ProjectCard>
+          ))}
+      </div>
     </section>
   );
 }

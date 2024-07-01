@@ -2,11 +2,17 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+  padding: 2em;
 }
 
-.section {
+.titleContainer {
   width: 100%;
   display: flex;
-  justify-content: end;
-  margin-top: 1em;
+  justify-content: space-between;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
 }
