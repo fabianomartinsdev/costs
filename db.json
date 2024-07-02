@@ -1,23 +1,30 @@
 {
   "projects": [
     {
-      "id": "1788",
-      "name": "teste",
-      "budget": "321",
+      "id": "d5d6",
+      "name": "Desenvolver Game",
+      "budget": "20000",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": []
+      "cost": 400,
+      "services": [
+        {
+          "name": "Contratar dev php",
+          "cost": "400",
+          "description": "freela",
+          "id": "1e377170-ef05-4535-9efd-e5fc239ad3cb"
+        }
+      ]
     },
     {
-      "id": "3db6",
-      "name": "PC atualizado2",
-      "budget": "5400",
+      "id": "3e47",
+      "name": "Desenvolver web",
+      "budget": "5000",
       "category": {
-        "id": "5",
-        "name": "Operacional"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": []
