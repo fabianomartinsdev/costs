@@ -1,5 +1,39 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "1788",
+      "name": "teste",
+      "budget": "321",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "3db6",
+      "name": "PC",
+      "budget": "5000",
+      "category": {
+        "id": "5",
+        "name": "Operacional"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "6fd1",
+      "name": "app",
+      "budget": "2500",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
   "categories": [
     {
       "id": "1",
